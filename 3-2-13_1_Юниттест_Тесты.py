@@ -15,7 +15,7 @@ class TestRegistration(unittest.TestCase):
         button = browser.find_element(By.TAG_NAME, "button").click()
         comfirmation_text = browser.find_element(By.TAG_NAME, "h1").text
         self.assertEqual("Congratulations! You have successfully registered!", comfirmation_text,
-                         "Ёбаный рот этого казино!")
+                         "***ный рот этого казино!")
 
     def test_form_2(self):
         browser = webdriver.Chrome()
@@ -29,7 +29,7 @@ class TestRegistration(unittest.TestCase):
         button = browser.find_element(By.TAG_NAME, "button").click()
         comfirmation_text = browser.find_element(By.TAG_NAME, "h1").text
         self.assertEqual("Congratulations! You have successfully registered!", comfirmation_text,
-                         "Ёбаный рот этого казино!")
+                         "***ный рот этого казино!")
 
 if __name__ == "__main__":
     unittest.main()
